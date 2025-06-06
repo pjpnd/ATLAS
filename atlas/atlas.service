@@ -1,0 +1,10 @@
+[Unit]
+Description=ATLAS - Automated Telemetry and Log Acquisition System
+After=network-online.target nfs-client.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/atlas.sh
+StandardOutput=journal
+StandardError=journal
