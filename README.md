@@ -33,7 +33,7 @@ Ensure these tools are available in your environment.
 
 Configuration 📦
 ----------------
-I strongly recommend configuring ATLAS to your environment before running the install script on any machines. Standard configuration is written to `atlas.conf` - as of the current release, the only option of critical importance is the `output_dir` variable.
+You will need to tailor ATLAS to your environment before running the install script on any machines. Standard configuration is pulled from `atlas.conf` - as of the current release, the only option of critical importance is the `output_dir` variable.
 If no output directory is specified, no data can be saved. While data can be stored locally on the machine, if you plan on using the service on several machines, I recommend using a network share with appropriate permissions to store data.
 
 Adding additional data metrics is rather simple as well, just adjust the `atlas.sh` script to include whatever else you may need, and redeploy.
